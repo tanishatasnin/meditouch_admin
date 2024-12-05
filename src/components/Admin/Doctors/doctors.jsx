@@ -2,7 +2,7 @@
 const doctors = () => {
     return (
         <div>
-           h1 Musfiq  
+           <h1>hi i am doc</h1>
         </div>
     );
 };
