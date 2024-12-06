@@ -2,7 +2,8 @@
 .sidebar {
     width: 240px;
     height: 100vh;
-    background: #110624; /* Dark purple background */
+    /* background: #110624; */
+     /* Dark purple background */
     color: white;
     display: flex;
     flex-direction: column;
@@ -12,7 +13,30 @@
     top: 0;
     left: 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    
+  background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(38, 36, 69))
+  
+
   }
+  
+/* Modern Scrollbar Styles for Webkit Browsers */
+.sidebar::-webkit-scrollbar {
+    width: 10px; /* Width of scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: #1e0a40; /* Track color */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #fbfafb; /* Thumb color */
+    border-radius: 25px; /* Rounded scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #afaab0; /* Hover effect */
+  }
+
   
   /* Logo styling */
   .logo h2 {
@@ -27,9 +51,17 @@
   }
   
   /* Menu styling */
+
+  .menu-section {
+  overflow-y:auto; /* Enable vertical scrolling */
+  overflow-x:hidden;
+  scrollbar-width:thin; /* For modern browsers */
+  scrollbar-color: #454246 #1e0a40; /* Thumb and track colors */
+  
+  }
   .menu {
     list-style: none;
-    width: 100%;
+    width: 110%;
     padding: 0 ;
     margin: 0;
     margin-bottom: auto;
@@ -68,6 +100,9 @@
     
   }
   
+  .logout{
+    position: sticky;
+  }
   /* Logout button */
   .logout-button {
     margin-top: auto;
