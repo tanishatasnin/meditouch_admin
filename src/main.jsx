@@ -9,6 +9,7 @@ import "./index.css";
 import Dashboard from "./components/Admin/Dashboard/dashboard";
 import Navbar from "./components/Admin/Navbar/navbar";
 import Header from "./components/Admin/Header/header";
+import Sidebar from "./components/Admin/Navbar/sidebar";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/navbar',
         element: <Navbar></Navbar>
+      },
+      {
+        path: '/sidebar',
+        element: <Sidebar></Sidebar>
       },
       {
         path: '/header',
