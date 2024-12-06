@@ -14,7 +14,7 @@
     left: 0;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     
-  background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(38, 36, 69))
+  background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(51, 47, 98))
   
 
   }
@@ -39,16 +39,20 @@
 
   
   /* Logo styling */
-  .logo h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: white;
+ 
+  .logo {
+    /* text-align: center; */
+    /* margin: 10px; */
+    align-self: center;
+    position: sticky;
+  }
+
+  .logo img {
+    max-width:90px; /* Restrict the logo width */
+    height: auto; /* Maintain aspect ratio */
+    align-self: center;
   }
   
-  .logo .highlight {
-    color: #ddd1e3; /* Highlighted 'Touch' */
-  }
   
   /* Menu styling */
 
@@ -56,8 +60,7 @@
   overflow-y:auto; /* Enable vertical scrolling */
   overflow-x:hidden;
   scrollbar-width:thin; /* For modern browsers */
-  scrollbar-color: #454246 #1e0a40; /* Thumb and track colors */
-  
+  scrollbar-color: #1b0f1f #1e0a40; /* Thumb and track colors */
   }
   .menu {
     list-style: none;

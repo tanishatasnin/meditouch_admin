@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import './Sidebar.css';
-
+import logo from './../../../assets/assets/images/logo.png';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-        <h2>
-          Medi<span className="highlight">Touch</span>
-          <br />
-        </h2>
+        <img src={logo} alt="" />
       </div>
       <div className="menu-section"> 
       <ul className="menu">
