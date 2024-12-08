@@ -1,0 +1,169 @@
+/* Sidebar container */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    /* background: #110624; */
+     /* Dark purple background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    
+  background-image: linear-gradient(180deg, rgb(0, 0, 0), rgb(51, 47, 98))
+  
+
+  }
+  
+/* Modern Scrollbar Styles for Webkit Browsers */
+.sidebar::-webkit-scrollbar {
+    width: 10px; /* Width of scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: #1e0a40; /* Track color */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #fbfafb; /* Thumb color */
+    border-radius: 25px; /* Rounded scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb:hover {
+    background: #afaab0; /* Hover effect */
+  }
+
+  
+  /* Logo styling */
+ 
+  .logo {
+    /* text-align: center; */
+    /* margin: 10px; */
+    align-self: center;
+    position: sticky;
+  }
+
+  .logo img {
+    max-width:90px; /* Restrict the logo width */
+    height: auto; /* Maintain aspect ratio */
+    align-self: center;
+  }
+  
+  
+  /* Menu styling */
+
+  .menu-section {
+  overflow-y:auto; /* Enable vertical scrolling */
+  overflow-x:hidden;
+  scrollbar-width:thin; /* For modern browsers */
+  scrollbar-color: #1b0f1f #1e0a40; /* Thumb and track colors */
+  }
+  .menu {
+    list-style: none;
+    width: 110%;
+    padding: 0 ;
+    margin: 0;
+    margin-bottom: auto;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .menu-item i {
+    font-size: 14px;
+    margin-right: 15px;
+    color: #fffdfdf6; /* Lightened icon color */
+  }
+  
+  .menu-item span {
+    font-size: 14px;
+  }
+  
+  .menu-item:hover {
+    background: #d2d0d4; /* Hover effect */
+    color: #090909;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    transform: scale(1.1);
+    transition-duration: 0.4s;
+
+    
+  }
+  
+  .logout{
+    position: sticky;
+  }
+  /* Logout button */
+  .logout-button {
+    margin-top: auto;
+    align-self: center;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 220px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background: #c72d39;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .menu-item {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .menu-item i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  
+    .logout-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 180px;
+    }
+  
+    .menu-item {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  
+    .menu-item i {
+      font-size: 16px;
+    }
+  
+    .logout-button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
