@@ -1,0 +1,55 @@
+.header {
+    position: fixed; /* Makes the header fixed to the top */
+    top: 0;
+    left: 0;
+    width: calc(100% - 260px);
+    /* Adjust width to account for the sidebar */
+    height: 900px; /* Fixed height for the header */
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures the header stays on top of other elements */
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    border: 1px #f2e1f8 ;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 300px;
+    background-color:#f2e1f8;
+    height: 20px ;
+    
+  }
+  
+  .search-bar button {
+    background: rgb(76, 48, 118);
+    color: white;
+    border: 3px ;
+    padding: 8px 12px;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  

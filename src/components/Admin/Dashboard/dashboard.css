@@ -1,0 +1,52 @@
+/* Main container for the dashboard */
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 240px; /* Fixed sidebar width */
+    background-color: #2a2b4d;
+    color: white;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Scrollable sidebar if content overflows */
+  }
+  
+  /* Main content styling */
+  .main-content {
+    margin-left: 240px; /* Adjust to match the sidebar width */
+    width: calc(100% - 240px); /* Remaining width after sidebar */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header styling */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 260px;
+     /* Offset the header to the right of the sidebar */
+    width: calc(100% - 300px); /* Make the header width equal to the remaining width */
+    height: 100px; /* Fixed height */
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keep header on top */
+  }
+  
+  /* Content area styling */
+  .content-area {
+    margin-top: 60px; /* Space for the header */
+    padding: 20px; /* Add some padding */
+    overflow-y: auto; /* Scrollable if content overflows */
+    height: calc(100vh - 60px); /* Adjust for header height */
+    background-color: #f5f5f5; /* Optional background */
+  }
+  
