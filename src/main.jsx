@@ -11,6 +11,7 @@ import Navbar from "./components/Admin/Navbar/navbar";
 import Header from "./components/Admin/Header/header";
 import Sidebar from "./components/Admin/Navbar/sidebar";
 import Doctor from "./components/Pages/Doctor/doctor";
+import Login from "./components/Admin/Login/login";
 // import register_doctor from "./components/Pages/Doctor/register_doctor";
 import Emergency from "./components/Pages/Emergency/emergency";
 
@@ -52,6 +53,19 @@ const router = createBrowserRouter([
       path:'/pages/emergency',
       element:<Emergency></Emergency>
 
+    },
+    {
+      path: "/Login",
+      element:<Login></Login>,
+      children:[
+        {
+          path:'/Login',
+          element:<Login></Login>
+  
+        }
+  
+      ]
+      
     }
     
   
