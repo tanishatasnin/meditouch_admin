@@ -9,6 +9,7 @@ function Header() {
   const pageTitles = {
     '/': 'Good Morning!' ,
     '/doctor': 'Doctors',
+    '/nurses' : 'Nurses',
     '/orders': 'Order History',
   };
 

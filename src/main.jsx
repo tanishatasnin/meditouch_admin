@@ -14,7 +14,8 @@ import Doctor from "./components/Pages/Doctor/doctor";
 import Login from "./components/Admin/Login/login";
 // import register_doctor from "./components/Pages/Doctor/register_doctor";
 import Emergency from "./components/Pages/Emergency/emergency";
-
+import Register_doc from "./components/Pages/Doctor/register_doctor";
+import Nurses from "./components/Pages/Nurses/nurses";
 
 
 const router = createBrowserRouter([
@@ -47,68 +48,31 @@ const router = createBrowserRouter([
   },
   {
     
-      path:'/pages/emergency',
+      path:'/emergency',
       element:<Emergency></Emergency>
 
     },
     {
-      path: "/Login",
+      path: "/login",
       element:<Login></Login>,
-      children:[
-        {
-          path:'/Login',
-          element:<Login></Login>
-  
-        }
-  
-      ]
-      
-    }
-    ,{
-      path: "/Login",
-      element:<Login></Login>,
-      children:[
-        {
-          path:'/Login',
-          element:<Login></Login>
-  
-        }
-  
-      ]
-      
-    }
-    ,{
-      path: "/Login",
-      element:<Login></Login>,
-      children:[
-        {
-          path:'/Login',
-          element:<Login></Login>
-  
-        }
-  
-      ]
-      
-    }
-    , {
-      path: "/Login",
-      element:<Login></Login>,
-      children:[
-        {
-          path:'/Login',
-          element:<Login></Login>
-  
-        }
-  
-      ]
-      
-    }
+      }
     ,
+    {
+      path: "/nurses",
+      element:<Nurses></Nurses>,
+      
+      }
+    ,
+    
     {
       path: "/header",
       element:<Header></Header>,
       
       
+    },
+    {
+      path: "/register_doctor",
+      element: <Register_doc></Register_doc>
     }
 
   

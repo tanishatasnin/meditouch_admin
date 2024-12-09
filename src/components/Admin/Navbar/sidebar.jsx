@@ -35,7 +35,7 @@ const Sidebar = () => {
         </Link>
      
       
-        <Link to="/register-doctor" className="menu-item">
+        <Link to="/register_doctor" className="menu-item">
           <i className="fa fa-user-plus"></i> <span>Register Doctor</span>
         </Link>
       
