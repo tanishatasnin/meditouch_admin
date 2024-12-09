@@ -41,8 +41,7 @@
   /* Logo styling */
  
   .logo {
-    /* text-align: center; */
-    /* margin: 10px; */
+   
     align-self: center;
     position: sticky;
   }
@@ -90,6 +89,8 @@
   
   .menu-item span {
     font-size: 14px;
+    /* font-family: poppins; */
+    font-style: poppins;
   }
   
   .menu-item:hover {

@@ -28,19 +28,16 @@ const router = createBrowserRouter([
       {
         path: '/sidebar',
         element: <Sidebar></Sidebar>
-      },
-      {
-        path: '/header',
-        element: <Header></Header>
       }
+      
     ]
   }, 
   {
-    path: "/pages/",
+    path: "/doctor",
     element:<Doctor></Doctor>,
     children:[
       {
-        path:'/pages/doctor',
+        path:'/doctor',
         element:<Doctor></Doctor>
 
       }
@@ -87,10 +84,27 @@ const router = createBrowserRouter([
             element:<RegisterNurse></RegisterNurse>
 
     }
-  ]
-  },
-    
+
+    , {
+      path: "/Login",
+      element:<Login></Login>,
+      children:[
+        {
+          path:'/Login',
+          element:<Login></Login>
   
+        }
+  
+      ]
+      
+    }
+    ,
+    {
+      path: "/header",
+      element:<Header></Header>,
+      
+      
+    }
 
   
 ]);
