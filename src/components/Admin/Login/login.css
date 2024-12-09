@@ -1,11 +1,20 @@
-body {
-    margin: 0;
-    font-family: "Arial", sans-serif;
-    /* background: linear-gradient(to bottom right, #f5d7ff, #d6e4ff); */
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+  animation: bg 15s infinite;
+}
+
+@keyframes bg {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
   }
   
   .login-container {
