@@ -10,6 +10,8 @@ function Header() {
     '/': 'Good Morning!' ,
     '/doctor': 'Doctors',
     '/nurses' : 'Nurses',
+    '/register_nurse' : 'Add A Nurse',
+    '/register_doctor' : 'Add A Doctor',
     '/orders': 'Order History',
   };
 

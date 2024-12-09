@@ -29,7 +29,7 @@ const nurses = () => {
       
       {nurses.map((nurses) => (
         <div key={nurses.id} className="doctor-card">
-          <img src={nurses.image} alt={nurses.name} className="doctor-image" />
+          <img src={nurses.image} className="doctor-image" />
           <div className="doctor-details">
             <h2 className="doctor-name">{nurses.name}</h2>
             

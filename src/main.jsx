@@ -16,6 +16,7 @@ import Login from "./components/Admin/Login/login";
 import Emergency from "./components/Pages/Emergency/emergency";
 import Register_doc from "./components/Pages/Doctor/register_doctor";
 import Nurses from "./components/Pages/Nurses/nurses";
+import Register_nurse from "./components/Pages/Nurses/register_nurse"
 
 
 const router = createBrowserRouter([
@@ -73,7 +74,16 @@ const router = createBrowserRouter([
     {
       path: "/register_doctor",
       element: <Register_doc></Register_doc>
+    },
+    {
+      path: "/register_doctor",
+      element: <Register_doc></Register_doc>
+    },
+    {
+      path: "/register_nurse",
+      element: <Register_nurse></Register_nurse>
     }
+
 
   
 ]);
