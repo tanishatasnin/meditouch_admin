@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./register_doctor.css";
+import "./register_nurse.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 
-const RegisterDoctor = () => {
+const RegisterNurse = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,8 +51,8 @@ const RegisterDoctor = () => {
   return (
     <div className="register-doctor">
       <Sidebar />
-      <h1 className="title">Register a Doctor</h1>
-      <p className="subtitle">Insert doctor details below:</p>
+      <h1 className="title">Register a Nurse</h1>
+      <p className="subtitle">Insert Nurse details below:</p>
       <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
@@ -99,18 +99,18 @@ const RegisterDoctor = () => {
           onChange={handleInputChange}
           required
         />
-        <input
+        {/* <input
           type="text"
           name="licenseId"
           placeholder="License ID"
           value={formData.licenseId}
           onChange={handleInputChange}
           required
-        />
+        /> */}
         <input
           type="number"
-          name="visitingFee"
-          placeholder="Visiting Fee"
+          name="Charge per hour"
+          placeholder="Charge per hour"
           value={formData.visitingFee}
           onChange={handleInputChange}
           required
@@ -122,7 +122,7 @@ const RegisterDoctor = () => {
           onChange={handleInputChange}
           required
         />
-        <input
+        {/* <input
           type="text"
           name="specialty"
           placeholder="Specialty"
@@ -130,7 +130,7 @@ const RegisterDoctor = () => {
           onChange={handleInputChange}
           required
         />
-        
+         */}
         <button
           type="button"
           className="add-degree"
@@ -189,4 +189,4 @@ const RegisterDoctor = () => {
   );
 };
 
-export default RegisterDoctor;
+export default RegisterNurse;

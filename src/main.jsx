@@ -12,10 +12,9 @@ import Header from "./components/Admin/Header/header";
 import Sidebar from "./components/Admin/Navbar/sidebar";
 import Doctor from "./components/Pages/Doctor/doctor";
 import Login from "./components/Admin/Login/login";
-// import register_doctor from "./components/Pages/Doctor/register_doctor";
+import RegisterDoctor from "./components/Pages/Doctor/register_doctor";
 import Emergency from "./components/Pages/Emergency/emergency";
-
-
+import RegisterNurse from "./components/Pages/Nurses/register_nurse";
 
 const router = createBrowserRouter([
   {
@@ -66,7 +65,30 @@ const router = createBrowserRouter([
   
       ]
       
+    },
+    {
+      path: "/pages/",
+      element:<RegisterDoctor></RegisterDoctor>,
+      children:[
+        {
+          path:'/pages/register_doctor',
+          element:<RegisterDoctor></RegisterDoctor>
+  
+        }
+  
+      ]
+    },
+    {
+      path:"/pages/",
+      element:<RegisterNurse></RegisterNurse>,
+      children:[
+        {
+            path:'/pages/register_nurse',
+            element:<RegisterNurse></RegisterNurse>
+
     }
+  ]
+  },
     
   
 

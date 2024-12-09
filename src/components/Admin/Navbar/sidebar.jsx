@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+//import { useState } from 'react';
 import './Sidebar.css';
+
 import logo from './../../../assets/assets/images/logo.png';
 
 const Sidebar = () => {
