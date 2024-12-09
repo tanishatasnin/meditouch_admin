@@ -2,15 +2,15 @@ import React from 'react';
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header from '../../Admin/Header/header';
 
-const order_history = () => {
+const pending_order = () => {
     return (
         <div>
             <Sidebar></Sidebar>
             <Header>
             </Header>
-            <h1>order history recordes </h1>
+            <h1>prendin orders list </h1>
         </div>
     );
 };
 
-export default order_history;
+export default pending_order;

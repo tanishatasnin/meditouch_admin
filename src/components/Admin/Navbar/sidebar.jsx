@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="menu-section"> 
       <ul className="menu">
       
-        <Link to="/home" className="menu-item">
+        <Link to="/" className="menu-item">
           <i className="fa fa-home"></i><span>Home</span>
         </Link>
       
