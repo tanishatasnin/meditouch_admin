@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./register_nurse.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
+import Header from "../../Admin/Header/header";
 
 const RegisterNurse = () => {
   const [formData, setFormData] = useState({
@@ -49,11 +50,14 @@ const RegisterNurse = () => {
   };
 
   return (
-    <div className="register-doctor">
+    <div>
       <Sidebar />
-      <h1 className="title">Register a Nurse</h1>
-      <p className="subtitle">Insert Nurse details below:</p>
-      <form onSubmit={handleSubmit} className="form">
+      <Header></Header>
+      <div  className="register-nurse"> 
+        {/* <h1 className="title">Register a Nurse</h1>
+         <p className="subtitle">Insert Nurse details below:</p> */}
+        <form onSubmit={handleSubmit} className="form">
+        <p className="subtitle">Insert Nurse details below:</p> 
         <input
           type="text"
           name="name"
@@ -99,14 +103,6 @@ const RegisterNurse = () => {
           onChange={handleInputChange}
           required
         />
-        {/* <input
-          type="text"
-          name="licenseId"
-          placeholder="License ID"
-          value={formData.licenseId}
-          onChange={handleInputChange}
-          required
-        /> */}
         <input
           type="number"
           name="Charge per hour"
@@ -185,6 +181,8 @@ const RegisterNurse = () => {
           Register Doctor
         </button>
       </form>
+      </div>
+      
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="menu-section"> 
       <ul className="menu">
       
-        <Link to="/home" className="menu-item">
+        <Link to="/" className="menu-item">
           <i className="fa fa-home"></i><span>Home</span>
         </Link>
       
@@ -36,7 +36,7 @@ const Sidebar = () => {
         </Link>
      
       
-        <Link to="/register-doctor" className="menu-item">
+        <Link to="/register_doctor" className="menu-item">
           <i className="fa fa-user-plus"></i> <span>Register Doctor</span>
         </Link>
       
@@ -51,7 +51,7 @@ const Sidebar = () => {
         </Link>
       
       
-        <Link to="/add-nurses" className="menu-item">
+        <Link to="/register_nurse" className="menu-item">
           <i className="fa fa-user-nurse"></i> <span>Add Nurses</span>
         </Link>
       
