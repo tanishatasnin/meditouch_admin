@@ -12,9 +12,17 @@ import Header from "./components/Admin/Header/header";
 import Sidebar from "./components/Admin/Navbar/sidebar";
 import Doctor from "./components/Pages/Doctor/doctor";
 import Login from "./components/Admin/Login/login";
-import RegisterDoctor from "./components/Pages/Doctor/register_doctor";
 import Emergency from "./components/Pages/Emergency/emergency";
-import RegisterNurse from "./components/Pages/Nurses/register_nurse";
+import Register_doc from "./components/Pages/Doctor/register_doctor";
+import Nurses from "./components/Pages/Nurses/nurses";
+import Register_nurse from "./components/Pages/Nurses/register_nurse"
+import Pending_order from "./components/Pages/Pending_order/pending_order";
+import Emengency_doc from "./components/Pages/Emergency/emengency_doctor";
+import Order_History from "./components/Pages/Order_History/order_history";
+import Add_emergency_doctor from "./components/Pages/Emergency/add_emergency_doctor";
+import Add_agent from "./components/Pages/Agent/add_agent";
+import Agent from "./components/Pages/Agent/agent";
+
 
 const router = createBrowserRouter([
   {
@@ -46,65 +54,57 @@ const router = createBrowserRouter([
   },
   {
     
-      path:'/pages/emergency',
+      path:'/emergency',
       element:<Emergency></Emergency>
 
     },
     {
-      path: "/Login",
+      path: "/login",
       element:<Login></Login>,
-      children:[
-        {
-          path:'/Login',
-          element:<Login></Login>
-  
-        }
-  
-      ]
+      }
+    ,
+    {
+      path: "/nurses",
+      element:<Nurses></Nurses>,
       
+      }
+    ,
+    
+    
+    {
+      path: "/register_doctor",
+      element: <Register_doc></Register_doc>
     },
     {
-      path: "/pages/",
-      element:<RegisterDoctor></RegisterDoctor>,
-      children:[
-        {
-          path:'/pages/register_doctor',
-          element:<RegisterDoctor></RegisterDoctor>
-  
-        }
-  
-      ]
+      path: "/register_nurse",
+      element: <Register_nurse></Register_nurse>
     },
     {
-      path:"/pages/",
-      element:<RegisterNurse></RegisterNurse>,
-      children:[
-        {
-            path:'/pages/register_nurse',
-            element:<RegisterNurse></RegisterNurse>
-
-    }
-
-    , {
-      path: "/Login",
-      element:<Login></Login>,
-      children:[
-        {
-          path:'/Login',
-          element:<Login></Login>
-  
-        }
-  
-      ]
-      
+      path: "/pending-orders",
+      element: <Pending_order></Pending_order>
+    },
+    {
+      path: "/emergency-doctors",
+      element: <Emengency_doc></Emengency_doc>
+    }, 
+    {
+      path: "/order-history",
+      element: <Order_History></Order_History>
     }
     ,
     {
-      path: "/header",
-      element:<Header></Header>,
-      
-      
+      path:"/add-emergency-doctor", 
+      element:<Add_emergency_doctor></Add_emergency_doctor>
+    },{
+      path: "/add-agent",
+      element: <Add_agent></Add_agent>
     }
+    ,
+    {
+      path:"/agents", 
+      element:<Agent></Agent>
+    }
+
 
   
 ]);

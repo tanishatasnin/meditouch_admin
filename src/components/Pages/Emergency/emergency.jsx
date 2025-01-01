@@ -1,9 +1,14 @@
 import React from 'react';
+import Sidebar from '../../Admin/Navbar/sidebar';
+import Header from '../../Admin/Header/header';
 
 const emergency = () => {
     return (
         <div>
-            <h1>all emergencies are here </h1>
+            <Sidebar></Sidebar>
+            <Header>
+            </Header>
+            <h1>all emergencies request are here </h1>
         </div>
     );
 };

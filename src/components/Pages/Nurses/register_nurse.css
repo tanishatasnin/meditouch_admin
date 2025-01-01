@@ -1,13 +1,22 @@
 .register-nurse {
-    display: flex;
-    justify-content: flex-start;
-    padding: 10px;
+  display: flex;
+    /* align-items: flex-start; */
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 1200px;
+    margin-left: 240px;
+    height: 500px;
+    
   }
   
   .title {
     font-size: 24px;
     color: #948c9f;
     margin-bottom: 10px;
+    text-align: left;
   }
   
   .subtitle {
@@ -17,10 +26,24 @@
   }
   
   .form {
+    padding: 10px;
+    /* background-color: #cab3e8; */
+    border: none;
+    border-radius: 5px;
+    /* color: #4a148c; */
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    /* display: flex; */
+    flex-direction: column;
+    gap: 10px; 
+    
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Ensure consistent spacing between sections */
-    max-width: 200px; /* Prevent layout breaking on wider screens */
+    gap: 10px; 
+    width: 400px;
+    /* max-width: 400px;  */
   }
   
   .form input,
