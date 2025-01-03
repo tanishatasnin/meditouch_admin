@@ -1,0 +1,46 @@
+/* Pending Orders Header */
+
+.pending-orders-header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.pending-orders-title {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.notification-badge {
+    background-color: #ff5252;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+/* Order Cards */
+
+.order-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border : 5px solid red;
+    margin-top: -100px;
+    margin-left: -600px;
+    border : 5px solid yellow;
+
+}
+
+.order-card {
+    background-color: #5a2ec9;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 5px solid  green;
+}
