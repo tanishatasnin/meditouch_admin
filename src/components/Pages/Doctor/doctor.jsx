@@ -1,7 +1,10 @@
 import React from 'react';
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header from '../../Admin/Header/header';
-import './Doctor.css'
+import './Doctor.css';
+
+import doctor_image from '../../../assets/assets/images/doctor-demo.jpg';
+
 
 const doctor = () => {
 
@@ -32,7 +35,8 @@ const doctor = () => {
       
       {doctors.map((doctor) => (
         <div key={doctor.id} className="doctor-card">
-          <img src={doctor.image} alt={doctor.name} className="doctor-image" />
+          {/* <img src={doctor.image} alt={doctor.name} className="doctor-image" /> */}
+          <img src={doctor_image} alt={doctor.name} className="doctor-image" />
           <div className="doctor-details">
             <h2 className="doctor-name">{doctor.name}</h2>
             <p className="doctor-specialty">{doctor.specialty}</p>

@@ -13,10 +13,12 @@ function Header() {
     '/register_nurse' : 'Add A Nurse',
     '/register_doctor' : 'Add A Doctor',
     '/orders': 'Order History',
+    '/emergency': 'Emergency Request'
   };
 
   // Determine the current page title
   const currentTitle = pageTitles[location.pathname] || 'Dashboard';
+  
 
   return (
     <header className="header">
