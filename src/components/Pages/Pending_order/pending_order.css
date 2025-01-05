@@ -1,77 +1,67 @@
-/* General Styles */
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    width: 100vw;
-    padding-left: 30vw;
-    background-color: #f9f9f9;
-    border: 3px solid green;
+    /* border: 4px solid  green; */
+    height: 100vh;
+    margin-top: 250px;
 }
 
-.content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
+
+/* Adjusting the container */
+.pending-orders-container {
+    /* display: flex; */
     flex-direction: column;
-    background-color: #fff;
-    border: 3px solid rgb(107, 108, 103);
+    /* Stacks content vertically */
+    /* margin-top: 20px; */
+    /* Adds spacing from the top */
+    /* align-items: flex-start; */
+    /* Aligns items to the left */
+    padding: 4 30px;
+    /* border: 4px solid  gray; */
+    /* width:72vw;  */
+    /* height: 100 vh; */
+    width: 80vw;
+    /* Spans full width of the container */
+    margin-left: 245px;
+
 }
 
-/* Pending Orders Header */
-.pending-orders-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.pending-orders-title {
-    font-size: 1.8rem;
-    color: #333;
-}
-
-.notification-badge {
-    background-color: #ff5252;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 50%;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-/* Order Cards */
-.order-cards {
-    display: flex;
-    /* flex-wrap: wrap; */
-    gap: 20px;
-    /* justify-content: left; */
-    border: 4px solid blue;
-}
-
+/* Adjusting card styling for full width */
 .order-card {
     background-color: #5a2ec9;
+    /* Card background color */
     color: #fff;
+    /* Card text color */
     border-radius: 10px;
     padding: 20px;
-    flex: 1 1 300px;
-    max-width: 100vw;
+    width: 100%;
+    /* Card spans full width of container */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 3px solid red;
+    /* Subtle shadow for depth */
+    /* border: 3px solid red;  */
+    /* Optional border */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensures proper spacing */
+    /* margin-bottom: 250px;  */
+    /* Adds spacing between cards */
+    /* margin-top: 0; */
+
 }
+
 
 .card-header p {
     margin: 5px 0;
+    font-size: 0.95rem;
 }
 
 .divider {
-    border: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-top: 1px solid #fff;
     margin: 10px 0;
 }
 
 .card-details p {
     margin: 5px 0;
+    font-size: 0.9rem;
 }
 
 .ordered-items {
@@ -80,92 +70,51 @@
     margin: 10px 0;
 }
 
-.ordered-items li {
-    display: flex;
-    justify-content: space-between;
+.item-row {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-details {
+    font-size: 0.85rem;
+}
+
+.total-amount {
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.order-status {
     margin: 5px 0;
+    font-size: 0.95rem;
 }
 
 .mark-delivered-button {
-    display: inline-block;
-    width: auto;
-    padding: 5px 10px;
-    background-color: #28a745;
+    background-color: #4c1d99;
     color: #fff;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 1rem;
-    text-align: left;
+    cursor: pointer;
+    align-self: flex-end;
 }
-
 
 .mark-delivered-button:hover {
-    background-color: #45a049;
+    background-color: #9587ac;
 }
 
-#order {
+.item-separator {
     display: flex;
-    flex-direction: right;
-    justify-content: flex-end;
-    /* Align content to the bottom-right */
-    align-items: flex-end;
-    /* Align items to the right */
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.card-details #order button {
-    display: inline-flex;
-    /* Use inline-flex to fit the content */
-    flex-direction: right;
-    align-items: flex-end;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-    /* Ensure the width is only as wide as its content */
-}
-
-
-.card-details {
-    display: flex;
-    flex-direction: column;
-    /* Ensures proper stacking of child elements */
-}
-
-
-
-/* Responsive Styles */
-@media (max-width: 1024px) {
-    .order-cards {
-        flex-direction: column;
-    }
-
-    .order-card {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .pending-orders-header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .notification-badge {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .pending-orders-title {
-        font-size: 1.5rem;
-    }
-
-    .mark-delivered-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
+    justify-content: space-between;
+    /* background-color: red; */
 }
