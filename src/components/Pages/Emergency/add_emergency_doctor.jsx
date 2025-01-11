@@ -21,9 +21,15 @@ const EmergencyRegisterDoctor = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+  
+    // Check if the 'visitingFee' input is a negative number
+    if (name === "visitingFee" && value < 0) {
+      alert("Visiting fee cannot be negative.");
+      return; // Prevent updating state if value is negative
+    }
+  
     setFormData({ ...formData, [name]: value });
   };
-
   const handleImageUpload = (e) => {
     setFormData({ ...formData, image: e.target.files[0] });
   };

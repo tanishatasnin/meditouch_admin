@@ -11,7 +11,7 @@ const RegisterNurse = () => {
     gender: "",
     district: "",
     licenseId: "",
-    visitingFee: "",
+    chargePerHour: "", // Changed this field name to chargePerHour
     dob: "",
     specialty: "",
     image: null,
@@ -20,6 +20,14 @@ const RegisterNurse = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
+    // Check if the field is "chargePerHour" and ensure no negative values
+    if (name === "chargePerHour" && value < 0) {
+      alert("Charge per hour cannot be negative. Setting it to 0.");
+      setFormData({ ...formData, [name]: 0 });
+      return;
+    }
+
     setFormData({ ...formData, [name]: value });
   };
 
@@ -52,137 +60,127 @@ const RegisterNurse = () => {
   return (
     <div>
       <Sidebar />
-      <Header></Header>
-      <div  className="register-nurse"> 
-        {/* <h1 className="title">Register a Nurse</h1>
-         <p className="subtitle">Insert Nurse details below:</p> */}
+      <Header />
+      <div className="register-nurse">
         <form onSubmit={handleSubmit} className="form">
-        <p className="subtitle">Insert Nurse details below:</p> 
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone"
-          value={formData.phone}
-          onChange={handleInputChange}
-          required
-        />
-        <select
-          name="gender"
-          value={formData.gender}
-          onChange={handleInputChange}
-          required
-        >
-          <option value="" disabled>
-            Select gender
-          </option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">Other</option>
-        </select>
-        <input
-          type="text"
-          name="district"
-          placeholder="District"
-          value={formData.district}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="number"
-          name="Charge per hour"
-          placeholder="Charge per hour"
-          value={formData.visitingFee}
-          onChange={handleInputChange}
-          required
-        />
-        <input
-          type="date"
-          name="dob"
-          value={formData.dob}
-          onChange={handleInputChange}
-          required
-        />
-        {/* <input
-          type="text"
-          name="specialty"
-          placeholder="Specialty"
-          value={formData.specialty}
-          onChange={handleInputChange}
-          required
-        />
-         */}
-        <button
-          type="button"
-          className="add-degree"
-          onClick={handleAddDegree}
-        >
-          Add Degree
-        </button>
-
-        {/* Render degree input fields dynamically */}
-        <div className="degrees-container">
-  {formData.degrees.map((degree, index) => (
-    <div key={index} className="degree-group">
-      <label className="degree-label">Degree {index + 1}</label>
-      <div className="degree-inputs">
-        <input
-          type="text"
-          name={`degree-${index}`}
-          placeholder="Degree"
-          value={degree.degree}
-          onChange={(e) => handleDegreeChange(e, index, "degree")}
-        />
-        <input
-          type="text"
-          name={`year-${index}`}
-          placeholder="Year"
-          value={degree.year}
-          onChange={(e) => handleDegreeChange(e, index, "year")}
-        />
-        <input
-          type="text"
-          name={`institution-${index}`}
-          placeholder="Institution"
-          value={degree.institution}
-          onChange={(e) => handleDegreeChange(e, index, "institution")}
-        />
-      </div>
-    </div>
-  ))}
-</div>
-
-
-        <label className="image-upload">
-          Pick an image
+          <p className="subtitle">Insert Nurse details below:</p>
           <input
-            type="file"
-            name="image"
-            accept="image/*"
-            onChange={handleImageUpload}
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleInputChange}
+            required
           />
-        </label>
-        <button type="submit" className="submit-button">
-          Register Doctor
-        </button>
-      </form>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            value={formData.phone}
+            onChange={handleInputChange}
+            required
+          />
+          <select
+            name="gender"
+            value={formData.gender}
+            onChange={handleInputChange}
+            required
+          >
+            <option value="" disabled>
+              Select gender
+            </option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <input
+            type="text"
+            name="district"
+            placeholder="District"
+            value={formData.district}
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="number"
+            name="chargePerHour" // Changed to chargePerHour
+            placeholder="Charge per hour"
+            value={formData.chargePerHour} // Updated to chargePerHour
+            onChange={handleInputChange}
+            required
+          />
+          <input
+            type="date"
+            name="dob"
+            value={formData.dob}
+            onChange={handleInputChange}
+            required
+          />
+
+          <button
+            type="button"
+            className="add-degree"
+            onClick={handleAddDegree}
+          >
+            Add Degree
+          </button>
+
+          {/* Render degree input fields dynamically */}
+          <div className="degrees-container">
+            {formData.degrees.map((degree, index) => (
+              <div key={index} className="degree-group">
+                <label className="degree-label">Degree {index + 1}</label>
+                <div className="degree-inputs">
+                  <input
+                    type="text"
+                    name={`degree-${index}`}
+                    placeholder="Degree"
+                    value={degree.degree}
+                    onChange={(e) => handleDegreeChange(e, index, "degree")}
+                  />
+                  <input
+                    type="text"
+                    name={`year-${index}`}
+                    placeholder="Year"
+                    value={degree.year}
+                    onChange={(e) => handleDegreeChange(e, index, "year")}
+                  />
+                  <input
+                    type="text"
+                    name={`institution-${index}`}
+                    placeholder="Institution"
+                    value={degree.institution}
+                    onChange={(e) =>
+                      handleDegreeChange(e, index, "institution")
+                    }
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <label className="image-upload">
+            Pick an image
+            <input
+              type="file"
+              name="image"
+              accept="image/*"
+              onChange={handleImageUpload}
+            />
+          </label>
+          <button type="submit" className="submit-button">
+            Register Nurse
+          </button>
+        </form>
       </div>
-      
     </div>
   );
 };
