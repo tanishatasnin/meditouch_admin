@@ -82,7 +82,8 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className="login-page">
+      <div className="login-container">
       <div className="login-box">
         <div className="logo">
           <h1><span>Med</span>Touch</h1>
@@ -109,6 +110,7 @@ const Login = () => {
         </form>
       </div>
     </div>
+      </div>
   );
 };
 

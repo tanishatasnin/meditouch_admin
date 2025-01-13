@@ -1,14 +1,49 @@
 import React from 'react';
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header from '../../Admin/Header/header';
+import OrderCard from '../Pending_order/OrderCard';
 
-const order_history = () => {
+const order_history = ({ orders = [] }) => {
+
+    const exampleOrders = [
+        {
+          id: "HtKsR4ODfwQWC4Fq",
+          user: "John Doe",
+          date: "November 09, 2024, 12:00 PM",
+          paymentMethod: "bKash",
+          paymentStatus: "Paid",
+          address: "Dhaka, Bangladesh",
+          items: [
+            { name: "Sergel", quantity: 10, price: 7000 },
+            { name: "Maxpro", quantity: 5, price: 4900 },
+          ],
+          totalAmount: 11900,
+          status: "delivered",
+        },
+        {
+            id: "HtKsR4ODfwQWC4QiBFq",
+            user: "John Doe",
+            date: "November 09, 2024, 12:00 PM",
+            paymentMethod: "bKash",
+            paymentStatus: "Paid",
+            address: "Dhaka, Bangladesh",
+            items: [
+              { name: "Sergel", quantity: 10, price: 7000 },
+              { name: "Maxpro", quantity: 5, price: 4900 },
+            ],
+            totalAmount: 11900,
+            status: "delivered",
+          },
+      ];
+    
+      const allOrders = orders.length > 0 ? orders : exampleOrders;
+
     return (
         <div>
             <Sidebar></Sidebar>
             <Header>
             </Header>
-            <h1>order history recordes </h1>
+            <OrderCard initialOrders={allOrders}></OrderCard>
         </div>
     );
 };

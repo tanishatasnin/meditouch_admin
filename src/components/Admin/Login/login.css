@@ -1,9 +1,9 @@
-    height: 100vh;
+    /* height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   animation: bg 15s infinite;
-}
+} */
 
 @keyframes bg {
   0% {
@@ -104,7 +104,8 @@ body {
   width: 150px; /* Adjust the width of the logo */
   height: auto; /* Keeps the aspect ratio intact */
    /* background-color: #d3cdd9;  */
-  mix-blend-mode: multiply; /* Blends the image with the purple background */
+  /* mix-blend-mode: multiply;  */
+  /* Blends the image with the purple background */
 
 
 }
