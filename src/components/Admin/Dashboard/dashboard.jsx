@@ -3,7 +3,7 @@
 // import Navbar from '../Navbar/navbar';
 // import Sidebar from '../Navbar/sidebar';
 // import Header from '../Header/header';
-// import Home from '../Home/home'
+import Home from '../Home/home'
 import DashboardLayout from '../Layout/DashboardLayout';
 import './Dashboard.css';
 
@@ -21,7 +21,7 @@ const dashboard = () => {
     // </div>
 
     <DashboardLayout>
-
+<Home></Home>
     </DashboardLayout>
 
     

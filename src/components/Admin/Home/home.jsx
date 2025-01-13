@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.css';
+import Chart from '../Home/chart';
 import userImg from  '../../../assets/assets/icons/icons8-users-50.png';
 import doctors from  '../../../assets/assets/icons/icons8-doctors-50.png';
  import money from  '../../../assets/assets/icons/icons8-money-50.png';
@@ -66,7 +67,7 @@ const home = () => {
 </section>
 <section className='home_chart'>
 <div className='chart-container'>
-    <h1>i ma chart section of home page </h1>
+    <Chart/>
 </div>
 
 </section>
