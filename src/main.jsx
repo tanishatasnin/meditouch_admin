@@ -22,6 +22,7 @@ import Order_History from "./components/Pages/Order_History/order_history";
 import Add_emergency_doctor from "./components/Pages/Emergency/add_emergency_doctor";
 import Add_agent from "./components/Pages/Agent/add_agent";
 import Agent from "./components/Pages/Agent/agent";
+import Home from "./components/Admin/Home/home";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,9 @@ const router = createBrowserRouter([
       {
         path: '/sidebar',
         element: <Sidebar></Sidebar>
+      },{
+        path: '/home',
+        element: <Home></Home>
       }
       
     ]
