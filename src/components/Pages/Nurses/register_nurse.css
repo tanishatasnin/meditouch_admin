@@ -1,3 +1,14 @@
+.page-body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-left: 15%;
+}
+.register-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 .register-nurse {
   display: flex;
   /* align-items: flex-start; */
@@ -5,13 +16,17 @@
   border: 1px solid #e0e0e0;
   border-color: white;
   /* padding: 20px; */
-  margin-bottom: 20px;
-  width: 1200px;
-  /* margin-left: 240px; */
-  /* height: 500px; */
-  margin-top: 300px;
-  /* border: 5px solid red; */
-
+  margin-bottom: 15px;
+  width: 100%;
+    /* margin-left: 240px; */
+    /* height: 500px; */
+    /* margin-top: 300px; */
+    /* border: 5px solid red; */
+    margin-top: 30px;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 80vh;
 }
 
 .title {

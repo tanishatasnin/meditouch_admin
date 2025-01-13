@@ -57,7 +57,7 @@ const EmergencyRegisterDoctor = () => {
   };
 
   return (
-    <div>
+    <div className="page-body">
       <Sidebar />
       <Header></Header>
       <div  className="register-nurse"> 
