@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import "./register_doctor.css";
+import "./register_doctor.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
 
@@ -58,10 +58,11 @@ const RegisterDoctor = () => {
   };
 
   return (
-    <div>
+    <div className="page-body">
       <Sidebar />
       <Header></Header>
-      <div className="register-nurse">
+    <div className="register-container">
+    <div className="register-nurse">
         {/* <h1 className="title">Register a Doctor</h1> */}
         <form onSubmit={handleSubmit} className="form">
           <p className="subtitle">Insert doctor details below:</p>
@@ -198,6 +199,7 @@ const RegisterDoctor = () => {
           </button>
         </form>
         
+      </div>
       </div>
     </div>
   );

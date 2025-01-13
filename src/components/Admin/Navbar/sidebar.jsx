@@ -76,7 +76,7 @@
 // export default Sidebar;
 
 //new for responsive layout
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import "./Sidebar.css";
 import logo from "./../../../assets/assets/images/logo.png";
 import { Link } from "react-router-dom";
@@ -88,6 +88,20 @@ const Sidebar = () => {
     setIsOpen(!isOpen);
   };
 
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsOpen(false);
+      } else {
+        setIsOpen(true);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  });
   return (
     <>
       {/* Hamburger Menu */}

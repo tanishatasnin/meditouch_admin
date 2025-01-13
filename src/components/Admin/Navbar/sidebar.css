@@ -8,6 +8,7 @@
   align-items: flex-start;
   padding: 10px;
   position: fixed;
+  z-index: 10000;
   top: 0;
   left: 0;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
@@ -74,6 +75,7 @@
   max-width: 80%;
   height: auto;
   transition: all 0.3s ease;
+  /* z-index: 999; */
 }
 
 .sidebar.collapsed .sidebar-logo {

@@ -35,16 +35,16 @@ const EmergencyRegisterDoctor = () => {
     setFormData({ ...formData, image: e.target.files[0] });
   };
 
-  const handleAddDegree = () => {
-    const nextDegreeNumber = formData.degrees.length + 1;
-    setFormData({
-      ...formData,
-      degrees: [
-        ...formData.degrees,
-        { degree: `degree${nextDegreeNumber}`, year: "", institution: "" },
-      ],
-    });
-  };
+  // const handleAddDegree = () => {
+  //   const nextDegreeNumber = formData.degrees.length + 1;
+  //   setFormData({
+  //     ...formData,
+  //     degrees: [
+  //       ...formData.degrees,
+  //       { degree: `degree${nextDegreeNumber}`, year: "", institution: "" },
+  //     ],
+  //   });
+  // };
 
   const handleDegreeChange = (index, field, value) => {
     const updatedDegrees = [...formData.degrees];
@@ -58,7 +58,7 @@ const EmergencyRegisterDoctor = () => {
   };
 
   return (
-    <div>
+    <div className="page-body">
       <Sidebar />
       <Header></Header>
       <div  className="register-nurse"> 

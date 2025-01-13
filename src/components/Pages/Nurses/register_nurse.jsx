@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./register_nurse.css";
+// import "./register_nurse.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
-
+import "../Doctor/register_doctor.css"
 const RegisterNurse = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -58,7 +58,7 @@ const RegisterNurse = () => {
   };
 
   return (
-    <div>
+    <div className="page-body">
       <Sidebar />
       <Header />
       <div className="register-nurse">
