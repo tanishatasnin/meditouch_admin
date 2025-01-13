@@ -7,8 +7,10 @@
     
     width: 1200px;
     margin-left: 210px;
-    height: 350px;
+    /* height: 350px; */
     margin-bottom: 30px;
+    margin-top: 380px;
+
     
 }
 .card-container {
@@ -97,6 +99,11 @@
     font-size: 14px;
 }
 
+#chart {
+    max-width: 850px;
+    align-self: center;
+}
+
 /* section chart */
 .chart-container {
     
@@ -107,15 +114,15 @@
 }
 
 /* section3 */
-.home_section3 {
+/* .home_section3 {
     
     display: grid;
-    grid-template-columns: repeat(2, 2fr); /* 4 cards per row */
-    gap: 10px; /* Space between cards */
+    grid-template-columns: repeat(2, 2fr); 
+    gap: 10px; 
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 10px; */
-}
+   
+} */
 
 
 /* Responsive Design */

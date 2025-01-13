@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
-import "G:/SWE/meditouch_admin/src/components/Pages/Nurses/register_nurse.css";
+// import "G:/SWE/meditouch_admin/src/components/Pages/Nurses/register_nurse.css";
 
 
 const EmergencyRegisterDoctor = () => {

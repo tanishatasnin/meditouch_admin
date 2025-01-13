@@ -23,6 +23,7 @@ import Add_emergency_doctor from "./components/Pages/Emergency/add_emergency_doc
 import Add_agent from "./components/Pages/Agent/add_agent";
 import Agent from "./components/Pages/Agent/agent";
 import Home from "./components/Admin/Home/home";
+import Chart from "./components/Admin/Home/chart";
 
 
 const router = createBrowserRouter([
@@ -40,7 +41,11 @@ const router = createBrowserRouter([
       },{
         path: '/home',
         element: <Home></Home>
+      },{
+        path: '/chart',
+        element: <Chart/>
       }
+
       
     ]
   }, 
