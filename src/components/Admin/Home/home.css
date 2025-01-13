@@ -34,12 +34,12 @@
     box-shadow:  #f2e1f8;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
     
     
 }
 .card:hover {
-    transform: scale(1.01);
+    transform: scale(1.00);
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
     box-shadow: 0 0 0 3px #e3c4ef, 
@@ -96,6 +96,27 @@
     margin-right: 5px;
     font-size: 14px;
 }
+
+/* section chart */
+.chart-container {
+    
+    align-items: center;
+    background: white;
+    width: 1200px;
+    margin-left: 210px;
+}
+
+/* section3 */
+.home_section3 {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* 4 cards per row */
+    gap: 10px; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 10px; */
+}
+
 
 /* Responsive Design */
 @media (max-width: 1024px) {

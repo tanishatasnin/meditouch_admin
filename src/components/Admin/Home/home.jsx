@@ -9,8 +9,11 @@ import doctors from  '../../../assets/assets/icons/icons8-doctors-50.png';
 
 const home = () => {
     return (
-        <div class="home_cards">
-        <div class="card-container">
+
+        <div>
+            <section className='home_cards'>
+            <div class="">
+               <div class="card-container">
         {/* <!-- Card 1 --> */}
         <div class="card">
             <div class="icon" >
@@ -60,6 +63,23 @@ const home = () => {
         </div>
     </div>
     </div>
+</section>
+<section className='home_chart'>
+<div className='chart-container'>
+    <h1>i ma chart section of home page </h1>
+</div>
+
+</section>
+
+<section className='home_section3'>
+<div>
+    <h1>graph</h1>
+</div>
+<div> <h1>calander</h1></div>
+</section>
+
+        </div>
+        
     );
 };
 
