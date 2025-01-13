@@ -1,0 +1,120 @@
+.main-container {
+    /* border: 4px solid  green; */
+    height: 100vh;
+    margin-top: 250px;
+}
+
+
+/* Adjusting the container */
+.pending-orders-container {
+    /* display: flex; */
+    flex-direction: column;
+    /* Stacks content vertically */
+    /* margin-top: 20px; */
+    /* Adds spacing from the top */
+    /* align-items: flex-start; */
+    /* Aligns items to the left */
+    padding: 4 30px;
+    /* border: 4px solid  gray; */
+    /* width:72vw;  */
+    /* height: 100 vh; */
+    width: 80vw;
+    /* Spans full width of the container */
+    margin-left: 245px;
+
+}
+
+/* Adjusting card styling for full width */
+.order-card {
+    background-color: #5a2ec9;
+    /* Card background color */
+    color: #fff;
+    /* Card text color */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    /* Card spans full width of container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    /* border: 3px solid red;  */
+    /* Optional border */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensures proper spacing */
+    /* margin-bottom: 250px;  */
+    /* Adds spacing between cards */
+    /* margin-top: 0; */
+
+}
+
+
+.card-header p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.divider {
+    border-top: 1px solid #fff;
+    margin: 10px 0;
+}
+
+.card-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.ordered-items {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.item-row {
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-weight: bold;
+}
+
+.item-details {
+    font-size: 0.85rem;
+}
+
+.total-amount {
+    /* display: flex;
+    justify-content: space-between; */
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.order-status {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.mark-delivered-button {
+    background-color: #4c1d99;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.mark-delivered-button:hover {
+    background-color: #9587ac;
+}
+
+.item-separator {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}

@@ -1,127 +1,134 @@
 .register-nurse {
   display: flex;
-    /* align-items: flex-start; */
-    background: white;
-    border: 1px solid #e0e0e0;
-    border-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 1200px;
-    margin-left: 240px;
-    height: 500px;
-    
-  }
-  
-  .title {
-    font-size: 24px;
-    color: #948c9f;
-    margin-bottom: 10px;
-    text-align: left;
-  }
-  
-  .subtitle {
-    font-size: 16px;
-    color: #6a6a6a;
-    margin-bottom: 20px;
-  }
-  
-  .form {
-    padding: 10px;
-    /* background-color: #cab3e8; */
-    border: none;
-    border-radius: 5px;
-    /* color: #4a148c; */
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    /* display: flex; */
-    flex-direction: column;
-    gap: 10px; 
-    
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-    width: 400px;
-    /* max-width: 400px;  */
-  }
-  
-  .form input,
-  .form select,
-  .form button {
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #f3e5f5; /* Light purple */
-  }
-  
-  .form select {
-    background-color: #cab3e8;
-  }
-  
-  .degrees-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px; /* Add consistent spacing between degree rows */
-    margin-top: 20px; /* Separate the degrees section from other inputs */
-  }
-  
-  .degree-inputs {
-    display: flex;
-    gap: 10px; /* Add spacing between fields within a degree row */
-  }
-  
-  .degree-inputs input {
-    flex: 1; /* Ensure fields have equal width */
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    background-color: #fff;
-  }
-  
-  .add-degree,
-  .image-upload {
-    padding: 10px;
-    background-color: #cab3e8;
-    border: none;
-    border-radius: 5px;
-    color: #4a148c;
-    cursor: pointer;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .add-degree:hover,
-  .image-upload:hover {
-    background-color: #b39ddb; /* Slightly darker on hover */
-  }
-  
-  .image-upload input {
-    display: none;
-  }
-  
-  .submit-button {
-    padding: 12px;
-    background-color: #4a148c;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .submit-button:hover {
-    background-color: #6a1b9a;
-  }
-  
-  .form input:focus,
-  .form select:focus,
-  .add-degree:focus,
-  .submit-button:focus {
-    outline: none;
-    border-color: #e4e0e9;
-  }
-  
+  /* align-items: flex-start; */
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-color: white;
+  /* padding: 20px; */
+  margin-bottom: 20px;
+  width: 1200px;
+  /* margin-left: 240px; */
+  /* height: 500px; */
+  margin-top: 300px;
+  /* border: 5px solid red; */
+
+}
+
+.title {
+  font-size: 24px;
+  color: #948c9f;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6a6a6a;
+  margin-bottom: 20px;
+}
+
+.form {
+  padding: 10px;
+  /* background-color: #cab3e8; */
+  border: none;
+  border-radius: 5px;
+  /* color: #4a148c; */
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 400px;
+  /* max-width: 400px;  */
+}
+
+.form input,
+.form select,
+.form button {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f3e5f5;
+  /* Light purple */
+}
+
+.form select {
+  background-color: #cab3e8;
+}
+
+.degrees-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Add consistent spacing between degree rows */
+  margin-top: 20px;
+  /* Separate the degrees section from other inputs */
+}
+
+.degree-inputs {
+  display: flex;
+  gap: 10px;
+  /* Add spacing between fields within a degree row */
+}
+
+.degree-inputs input {
+  flex: 1;
+  /* Ensure fields have equal width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.add-degree,
+.image-upload {
+  padding: 10px;
+  background-color: #cab3e8;
+  border: none;
+  border-radius: 5px;
+  color: #4a148c;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.add-degree:hover,
+.image-upload:hover {
+  background-color: #b39ddb;
+  /* Slightly darker on hover */
+}
+
+.image-upload input {
+  display: none;
+}
+
+.submit-button {
+  padding: 12px;
+  background-color: #4a148c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #6a1b9a;
+}
+
+.form input:focus,
+.form select:focus,
+.add-degree:focus,
+.submit-button:focus {
+  outline: none;
+  border-color: #e4e0e9;
+}
