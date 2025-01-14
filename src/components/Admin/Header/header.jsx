@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Header.css';
 
+
 function Header() {
   const location = useLocation();
 
@@ -13,7 +14,14 @@ function Header() {
     '/register_nurse' : 'Add A Nurse',
     '/register_doctor' : 'Add A Doctor',
     '/orders': 'Order History',
-    '/emergency': 'Emergency Request'
+    '/emergency': 'Emergency Request', 
+    '/order-history': 'Order History',
+    '/pending-orders': 'Pending Orders',
+    '/emergency-doctors': 'Emergency Doctors',
+    '/add-emergency-doctor' : 'Add Emergency Doctor',
+    '/agents': 'Agents' ,
+    '/add-agent' : 'Add Agent'
+
   };
 
   // Determine the current page title
