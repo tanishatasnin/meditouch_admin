@@ -5,7 +5,7 @@ import './emergency.css';
 import doctor_image from '../../../assets/assets/images/doctor-demo.jpg';
 
 const emergency = () => {
-  const doctors = [
+  const services = [
     {
       id: 1,
       name: 'Limon',
@@ -24,35 +24,35 @@ const emergency = () => {
       <Sidebar />
       <Header1 />
       <div className="e-doctor-page">
-        {doctors.map((doctor) => (
-          <div key={doctor.id} className="e-doctor-card">
+        {services.map((service) => (
+          <div key={service.id} className="e-doctor-card">
             {/* Profile Image */}
-            {/* <img src={doctor.image} alt={doctor.name} className="doctor-image" /> */}
+            <img src={service.image} alt={service.name} className="e-doctor-image" />
             
             {/* Details Section */}
             <div className="e-doctor-details">
-              <h2 className="e-doctor-name">{doctor.name}</h2>
+              <h2 className="e-doctor-name">{service.name}</h2>
               <p>
-                <strong>Email:</strong> {doctor.email}
+                <strong>Email:</strong> {service.email}
               </p>
               <p>
-                <strong>Phone:</strong> {doctor.phone}
+                <strong>Phone:</strong> {service.phone}
               </p>
               <p>
-                <strong>Service:</strong> {doctor.service}
+                <strong>Service:</strong> {service.service}
               </p>
               <p>
-                <strong>Request Time:</strong> {doctor.requestTime}
+                <strong>Request Time:</strong> {service.requestTime}
               </p>
               <p>
-                <strong>Status:</strong> <span className={`status ${doctor.status.toLowerCase()}`}>{doctor.status}</span>
+                <strong>Status:</strong> <span className={`status ${service.status.toLowerCase()}`}>{service.status}</span>
               </p>
             </div>
             
             {/* Button Section */}
             <div className="e-doctor-actions">
-              <button className="btn view-location">View Location on Map</button>
-              <button className="btn mark-done">✔ Mark as done</button>
+              <button className="e-btn view-location">View Location on Map</button>
+              <button className="e-btn mark-done">✔ Mark as done</button>
             </div>
           </div>
         ))}
