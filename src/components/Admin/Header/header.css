@@ -14,31 +14,37 @@
     z-index: 1000; /* Ensures the header stays on top of other elements */
   }
   
-  .search-bar {
+  .search-bar-1 {
     display: flex;
     align-items: center;
     width: 20%;
   }
   
-  .search-bar input {
+  .search-bar-1 input {
     border: 1px #f2e1f8 ;
     padding: 15px 15px;
     border-radius: 10px;
     margin-right: 10px;
-    width: 80%;
+    width: 440px;
     background-color:#f2e1f8;
-    height: 20px ;
+    height: 45px ;
     
   }
+  .search-bar-1:hover{
+    opacity: 0.7;
+    border: 1px #f2e1f8 ;
+    
+}
   
-  .search-bar button {
+  .search-bar-1 button {
     background: rgb(76, 48, 118);
     color: white;
-    border: 3px ;
+    /* border: 3px ; */
     padding: 8px 12px;
-    border-radius: 10px;
-    width: 20%;
+    border-radius: 50%;
+    width: 45px;
     height: 45px;
+
   }
   
   .profile {

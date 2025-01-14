@@ -24,8 +24,8 @@ function Header() {
     <header className="header">
       <h2>{currentTitle} <i className="fa fa-user-md"></i> </h2>
       
-      <div className="search-bar">
-        <input type="text" placeholder="Search" />
+      <div className="search-bar-1">
+        <input  className ="input1" type="text" placeholder="Search." />
         <button><i className="fa fa-search"></i></button>
       </div>
       <div className="profile">
