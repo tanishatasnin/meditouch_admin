@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header from '../../Admin/Header/header';
 import '../Doctor/Doctor.css';
+import Header1 from '../../Admin/Header/header1';
 
 
 const nurses = () => {
@@ -23,7 +24,7 @@ const nurses = () => {
     return (
         <div>
             <Sidebar></Sidebar>
-            <Header></Header>
+            <Header1></Header1>
             
              <div className="doctor-page">
       

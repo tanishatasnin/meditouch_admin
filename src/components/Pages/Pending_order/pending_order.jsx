@@ -5,6 +5,7 @@ import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
 import "./pending_order.css";
 import OrderCard from "./OrderCard";
+import Header2 from "../../Admin/Header/header2";
 
 const PendingOrders = ({ orders = [] }) => {
   const exampleOrders = [
@@ -46,7 +47,7 @@ const PendingOrders = ({ orders = [] }) => {
     <div className="main-container">
       <Sidebar />
       <div className="content">
-        <Header />
+      <Header2></Header2>
      
     <OrderCard initialOrders={allOrders}></OrderCard> 
       </div>

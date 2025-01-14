@@ -2,9 +2,8 @@ import React from 'react';
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header from '../../Admin/Header/header';
 import './Doctor.css';
-
-
 import doctor_image from '../../../assets/assets/images/doctor-demo.jpg';
+import Header1 from '../../Admin/Header/header1';
 
 
 const doctor = () => {
@@ -30,8 +29,9 @@ const doctor = () => {
     return (
         <div>
             <Sidebar></Sidebar>
-            <Header>
-            </Header>
+            {/* <Header>
+            </Header> */}
+            <Header1></Header1>
              <div className="doctor-page">
       
       {doctors.map((doctor) => (

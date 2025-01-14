@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./register_doctor.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
+import Header2 from "../../Admin/Header/header2";
 
 const RegisterDoctor = () => {
   const [formData, setFormData] = useState({
@@ -60,7 +61,8 @@ const RegisterDoctor = () => {
   return (
     <div className="page-body">
       <Sidebar />
-      <Header></Header>
+      {/* <Header></Header> */}
+      <Header2></Header2>
     <div className="register-container">
     <div className="register-nurse">
         {/* <h1 className="title">Register a Doctor</h1> */}

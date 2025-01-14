@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
+import Header2 from "../../Admin/Header/header2";
 // import "G:/SWE/meditouch_admin/src/components/Pages/Nurses/register_nurse.css";
 
 
@@ -60,7 +61,8 @@ const EmergencyRegisterDoctor = () => {
   return (
     <div className="page-body">
       <Sidebar />
-      <Header></Header>
+      {/* <Heade2></Heade2> */}
+      <Header2></Header2>
       <div  className="register-nurse"> 
 
       {/* <h1 className="title">Register a Doctor</h1> */}
