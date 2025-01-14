@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Header.css';
+import Search from './search';
 
 function Header1() {
   const location = useLocation();
@@ -23,9 +24,8 @@ function Header1() {
   return (
     <header className="header">
         <div> <h2>{currentTitle}<i className="fa fa-user-md"></i> </h2></div>
-      <div className="search-bar">
-        <input type="text" placeholder="Search" />
-        <button><i className="fa fa-search"></i></button>
+      <div>
+        <Search></Search>
       </div>
       
     </header>

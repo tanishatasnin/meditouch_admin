@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     /* Adjust width to account for the sidebar */
-    height: 900px; /* Fixed height for the header */
+    height: 1000px; /* Fixed height for the header */
     background: #fff;
     display: flex;
     align-items: center;
