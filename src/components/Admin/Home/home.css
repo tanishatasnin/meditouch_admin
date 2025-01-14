@@ -6,7 +6,7 @@
     border-radius: 5px;
     
     width: 1200px;
-    margin-left: 210px;
+    margin-left: 230px;
     /* height: 350px; */
     margin-bottom: 30px;
     margin-top: 200px;
@@ -99,7 +99,7 @@
 }
 
 #chart {
-    max-width: 1050px;
+    max-width: 1200px;
     align-self: center;
 }
 
@@ -109,7 +109,7 @@
     align-items: center;
     background: white;
     width: 1200px;
-    margin-left: 210px;
+    margin-left: 230px;
 }
 
 /* section3 */
@@ -127,12 +127,14 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+         grid-template-columns: repeat(2, 1fr); 
+        
+        
     }
 }
 
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        grid-template-columns: repeat(1, 1fr); 
     }
 }

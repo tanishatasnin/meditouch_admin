@@ -51,12 +51,14 @@
     display: flex;
     align-items: center;
     width: 30%;
+    justify-content: flex-end;
   }
   
   .profile img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    padding: 15px;
   }
 
   /* ???????????????? header close ????????????????/ */
@@ -72,10 +74,12 @@
   
   @media only screen and (max-width: 768px) {
     .header {
-        padding-left: 1%;
+        padding-left: 15px;
+        
     }
-    .search-bar{
+    .search-bar-1{
       display: none;
+
     }
     .profile{
       width: 50%;

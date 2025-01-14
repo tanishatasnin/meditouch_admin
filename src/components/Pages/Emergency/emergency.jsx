@@ -1,11 +1,13 @@
 import React from 'react';
+import { useState } from "react";
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header1 from '../../Admin/Header/header1';
 import './emergency.css';
 import doctor_image from '../../../assets/assets/images/doctor-demo.jpg';
 
 const emergency = () => {
-  const services = [
+ 
+  const [services,setServices]=useState([
     {
       id: 1,
       name: 'Limon',
@@ -17,7 +19,14 @@ const emergency = () => {
       image: doctor_image,
     },
     
-  ];
+  ]);
+  
+
+  const handleMarkAsDelivered = (sevicesId) => {
+    const updatedservices = services.filter((service) => service.id !== sevicesId);
+
+    setServices(updatedservices);
+  };
 
   return (
     <div>
@@ -52,7 +61,7 @@ const emergency = () => {
             {/* Button Section */}
             <div className="e-doctor-actions">
               <button className="e-btn view-location">View Location on Map</button>
-              <button className="e-btn mark-done">✔ Mark as done</button>
+              <button className="e-btn mark-done" onClick={() => handleMarkAsDelivered(service.id)}>✔ Mark as done</button>
             </div>
           </div>
         ))}

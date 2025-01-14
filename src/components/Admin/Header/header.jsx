@@ -29,7 +29,7 @@ function Header() {
         <button><i className="fa fa-search"></i></button>
       </div>
       <div className="profile">
-        <span>Kaium Al Limon 2</span>
+        <span>Kaium Al Limon 2 </span>
         <img src="profile-placeholder.jpg" alt="Profile" />
       </div>
     </header>

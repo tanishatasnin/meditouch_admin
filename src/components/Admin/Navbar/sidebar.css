@@ -1,12 +1,12 @@
 /* Sidebar container */
 .sidebar {
-  width: 240px;
+  width: 400px;
   height: 100vh;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 10px;
+  padding: 10px 0px 10px 10px;
 
   position: fixed;
   z-index: 10000;
@@ -87,6 +87,7 @@
 .menu-section {
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .menu {
@@ -120,6 +121,16 @@
 }
 
 .menu-item:hover {
+  background: #d2d0d4;
+  color: #090909;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  transform: scale(1.1);
+  transition-duration: 0.4s;
+
+}
+
+.active{
   background: #d2d0d4;
   color: #090909;
   border-bottom-left-radius: 25px;

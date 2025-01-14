@@ -7,7 +7,8 @@
   
   /* Sidebar styling */
   .sidebar {
-    width: 240px; /* Fixed sidebar width */
+    width: 260px;
+     /* Fixed sidebar width */
     background-color: #2a2b4d;
     color: white;
     height: 100%;
@@ -19,8 +20,8 @@
   
   /* Main content styling */
   .main-content {
-    margin-left: 240px; /* Adjust to match the sidebar width */
-    width: calc(100% - 240px); /* Remaining width after sidebar */
+    margin-left: 260px; /* Adjust to match the sidebar width */
+    width: calc(100% - 260px); /* Remaining width after sidebar */
     display: flex;
     flex-direction: column;
   }
@@ -39,7 +40,7 @@
     justify-content: space-between;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000; 
-    padding-left: 15%;
+    padding-left: 280px;
   
   }
   
