@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 10px;
+
   position: fixed;
   z-index: 10000;
   top: 0;
@@ -90,7 +91,7 @@
 
 .menu {
   list-style: none;
-  width: 110%;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -126,6 +127,36 @@
   transform: scale(1.1);
   transition-duration: 0.4s;
 }
+/* ///
+/* Hide scrollbar initially */
+.menu-section {
+  scrollbar-width:2px; /* For Firefox */
+}
+
+.menu-section::-webkit-scrollbar {
+  width: 0; /* For Webkit browsers */
+}
+
+/* Show scrollbar on hover */
+.menu-section:hover {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #323345 transparent; /* Customize scrollbar color */
+}
+
+.menu-section:hover::-webkit-scrollbar {
+  width: 2px; /* Set scrollbar width for Webkit browsers */
+}
+
+.menu-section:hover::-webkit-scrollbar-thumb {
+  background-color: #888; /* Customize scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+.menu-section:hover::-webkit-scrollbar-track {
+  background: transparent; /* Customize scrollbar track */
+}
+
+
 
 /* Logout button */
 .logout-button {
