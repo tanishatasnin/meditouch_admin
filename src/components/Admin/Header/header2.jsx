@@ -2,7 +2,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './Header.css';
 
-function Header() {
+function Header2() {
   const location = useLocation();
 
   // Map paths to page titles
@@ -22,18 +22,10 @@ function Header() {
 
   return (
     <header className="header">
-      <h2>{currentTitle} <i className="fa fa-user-md"></i> </h2>
+        <div> <h2>{currentTitle}<i className="fa fa-user-md"></i> </h2></div>
       
-      <div className="search-bar-1">
-        <input  className ="input1" type="text" placeholder="Search." />
-        <button><i className="fa fa-search"></i></button>
-      </div>
-      <div className="profile">
-        <span>Kaium Al Limon 2 </span>
-        <img src="profile-placeholder.jpg" alt="Profile" />
-      </div>
     </header>
   );
 }
 
-export default Header;
+export default Header2;

@@ -6,10 +6,10 @@
     border-radius: 5px;
     
     width: 1200px;
-    margin-left: 210px;
+    margin-left: 230px;
     /* height: 350px; */
     margin-bottom: 30px;
-    margin-top: 380px;
+    margin-top: 200px;
 
     
 }
@@ -30,8 +30,8 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    height: 190px;
-    width:285px ;
+    height: 200px;
+    width:300px ;
     background-color: #f2e1f8;
     box-shadow:  #f2e1f8;
     border-radius: 10px;
@@ -51,8 +51,7 @@
 /* Icon */
 .icon {
     font-size: 40px;
-    
-    margin: 10px 10px 10px 10px;
+    margin: 30px 10px 10px 10px;
     align-self: start;
     opacity: 0.3;
 }
@@ -100,7 +99,7 @@
 }
 
 #chart {
-    max-width: 850px;
+    max-width: 1200px;
     align-self: center;
 }
 
@@ -110,7 +109,7 @@
     align-items: center;
     background: white;
     width: 1200px;
-    margin-left: 210px;
+    margin-left: 230px;
 }
 
 /* section3 */
@@ -128,12 +127,14 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+         grid-template-columns: repeat(2, 1fr); 
+        
+        
     }
 }
 
 @media (max-width: 768px) {
     .card-container {
-        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        grid-template-columns: repeat(1, 1fr); 
     }
 }

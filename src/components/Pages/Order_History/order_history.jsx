@@ -2,6 +2,7 @@ import React from 'react';
 import Sidebar from '../../Admin/Navbar/sidebar';
 import Header from '../../Admin/Header/header';
 import OrderCard from '../Pending_order/OrderCard';
+import Header2 from '../../Admin/Header/header2';
 
 const order_history = ({ orders = [] }) => {
 
@@ -41,8 +42,7 @@ const order_history = ({ orders = [] }) => {
     return (
         <div>
             <Sidebar></Sidebar>
-            <Header>
-            </Header>
+            <Header2></Header2>
             <OrderCard initialOrders={allOrders}></OrderCard>
         </div>
     );

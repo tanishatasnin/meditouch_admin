@@ -128,57 +128,115 @@ const Sidebar = () => {
 
         {/* Menu Section */}
         <div className="menu-section">
-          <ul className="menu">
-            <Link to="/" className="menu-item">
-              <i className="fa fa-home"></i>
-              <span>Home</span>
-            </Link>
-            <Link to="/emergency" className="menu-item">
-              <i className="fa fa-bell"></i>
-              <span>Emergency</span>
-            </Link>
-            <Link to="/doctor" className="menu-item">
-              <i className="fa fa-user-md"></i>
-              <span>Doctors</span>
-            </Link>
-            <Link to="/register_doctor" className="menu-item">
-              <i className="fa fa-user-plus"></i>
-              <span>Register Doctor</span>
-            </Link>
-            <Link to="/nurses" className="menu-item">
-              <i className="fa fa-user"></i>
-              <span>Nurses</span>
-            </Link>
-            <Link to="/register_nurse" className="menu-item">
-              <i className="fa fa-user-nurse"></i>
-              <span>Add Nurses</span>
-            </Link>
-            <Link to="/pending-orders" className="menu-item">
-              <i className="fa fa-list"></i>
-              <span>Pending Orders</span>
-            </Link>
-            <Link to="/order-history" className="menu-item">
-              <i className="fa fa-history"></i>
-              <span>Order History</span>
-            </Link>
-            <Link to="/emergency-doctors" className="menu-item">
-              <i className="fa fa-users"></i>
-              <span>Emergency Doctors</span>
-            </Link>
-            <Link to="/add-emergency-doctor" className="menu-item">
-              <i className="fa fa-plus-circle"></i>
-              <span>Add Emergency Doctor</span>
-            </Link>
-            <Link to="/agents" className="menu-item">
-              <i className="fa fa-users"></i>
-              <span>Agents</span>
-            </Link>
-            <Link to="/add-agent" className="menu-item">
-              <i className="fa fa-user-tie"></i>
-              <span>Add Agent</span>
-            </Link>
-          </ul>
-        </div>
+      <ul className="menu">
+        <Link
+          to="/"
+          className={`menu-item ${location.pathname === "/" ? "active" : ""}`}
+        >
+          <i className="fa fa-home"></i>
+          <span>Home</span>
+        </Link>
+        <Link
+          to="/emergency"
+          className={`menu-item ${
+            location.pathname === "/emergency" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-bell"></i>
+          <span>Emergency</span>
+        </Link>
+        <Link
+          to="/doctor"
+          className={`menu-item ${
+            location.pathname === "/doctor" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-user-md"></i>
+          <span>Doctors</span>
+        </Link>
+        <Link
+          to="/register_doctor"
+          className={`menu-item ${
+            location.pathname === "/register_doctor" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-user-plus"></i>
+          <span>Register Doctor</span>
+        </Link>
+        <Link
+          to="/nurses"
+          className={`menu-item ${
+            location.pathname === "/nurses" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-user"></i>
+          <span>Nurses</span>
+        </Link>
+        <Link
+          to="/register_nurse"
+          className={`menu-item ${
+            location.pathname === "/register_nurse" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-user-nurse"></i>
+          <span>Add Nurses</span>
+        </Link>
+        <Link
+          to="/pending-orders"
+          className={`menu-item ${
+            location.pathname === "/pending-orders" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-list"></i>
+          <span>Pending Orders</span>
+        </Link>
+        <Link
+          to="/order-history"
+          className={`menu-item ${
+            location.pathname === "/order-history" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-history"></i>
+          <span>Order History</span>
+        </Link>
+        <Link
+          to="/emergency-doctors"
+          className={`menu-item ${
+            location.pathname === "/emergency-doctors" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-users"></i>
+          <span>Emergency Doctors</span>
+        </Link>
+        <Link
+          to="/add-emergency-doctor"
+          className={`menu-item ${
+            location.pathname === "/add-emergency-doctor" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-plus-circle"></i>
+          <span>Add Emergency Doctor</span>
+        </Link>
+        <Link
+          to="/agents"
+          className={`menu-item ${
+            location.pathname === "/agents" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-users"></i>
+          <span>Agents</span>
+        </Link>
+        <Link
+          to="/add-agent"
+          className={`menu-item ${
+            location.pathname === "/add-agent" ? "active" : ""
+          }`}
+        >
+          <i className="fa fa-user-tie"></i>
+          <span>Add Agent</span>
+        </Link>
+      </ul>
+    </div>
 
         {/* Logout Button */}
         <div className="logout">

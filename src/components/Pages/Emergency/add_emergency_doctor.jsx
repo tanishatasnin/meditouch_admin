@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./add_emergency_doctor.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
+import Header2 from "../../Admin/Header/header2";
 
 
 const EmergencyRegisterDoctor = () => {
@@ -59,7 +60,7 @@ const EmergencyRegisterDoctor = () => {
   return (
     <div className="page-body">
       <Sidebar />
-      <Header></Header>
+      <Header2></Header2>
       <div  className="register-nurse"> 
 
       {/* <h1 className="title">Register a Doctor</h1> */}

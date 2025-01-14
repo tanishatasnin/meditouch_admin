@@ -73,12 +73,12 @@
   }
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: 'popins';
   /* background: linear-gradient(to bottom right, #f5d7ff, #d6e4ff); */
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .login-container {

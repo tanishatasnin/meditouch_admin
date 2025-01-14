@@ -63,21 +63,18 @@ const home = () => {
             </div>
         </div>
     </div>
+    <br></br>
     </div>
+    <br></br>
 </section>
 <section className='home_chart'>
 <div className='chart-container'>
     <Chart/>
+    <br></br>
 </div>
-
 </section>
 
-<section className='home_section3'>
-<div>
-    <h1>graph</h1>
-</div>
-<div> <h1>calander</h1></div>
-</section>
+
 
         </div>
         

@@ -10,15 +10,7 @@ import './Dashboard.css';
 
 const dashboard = () => {
     return (
-    //     <div >
-    //   <Sidebar />
-      
-    //     <Header />
-       
-    //    <Home></Home>
-    //       <Outlet />
-        
-    // </div>
+   
 
     <DashboardLayout>
 <Home></Home>
