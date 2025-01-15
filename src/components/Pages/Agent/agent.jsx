@@ -7,17 +7,15 @@ import doctor_image from '../../../assets/assets/images/doctor-demo.jpg';
 
 
 const agent = () => {
-    const doctors = [
+    const agents = [
         {
           id: 1,
           name: 'MD Rahmatullah',
-          specialty: 'Endocrinologists',
-          licenseId: '117',
           email: 'mdrahmatullah5468@gmail.com',
           gender: 'Male',
           phone: '01715638963',
-          district: 'Barishal',
-          dob: '1999-09-25',
+          address:'Mohammadpur , dhaka',
+          dob:'2nd march 1996 ',
           degrees: 'MBBS from DMC (2020)',
           timeSlots: 'Not added yet!',
           image: 'https://via.placeholder.com/80', // Placeholder image URL
@@ -33,37 +31,29 @@ const agent = () => {
             <Header1></Header1>
              <div className="doctor-page">
       
-      {doctors.map((doctor) => (
-        <div key={doctor.id} className="doctor-card">
+      {agents.map((agent) => (
+        <div key={agent.id} className="doctor-card">
           {/* <img src={doctor.image} alt={doctor.name} className="doctor-image" /> */}
-          <img src={doctor_image} alt={doctor.name} className="doctor-image" />
+          <img src={doctor_image} alt={agent.name} className="doctor-image" />
           <div className="doctor-details">
-            <h2 className="doctor-name">{doctor.name}</h2>
-            <p className="doctor-specialty">{doctor.specialty}</p>
+            <h2 className="doctor-name">{agent.name}</h2>
             <p>
-              <strong>Licence ID:</strong> {doctor.licenseId}
+              <strong>Licence ID:</strong> {agent.address}
             </p>
             <p>
-              <strong>Email:</strong> {doctor.email}
+              <strong>Email:</strong> {agent.email}
             </p>
             <p>
-              <strong>Gender:</strong> {doctor.gender}
+              <strong>Gender:</strong> {agent.gender}
             </p>
             <p>
-              <strong>Phone:</strong> {doctor.phone}
+              <strong>Phone:</strong> {agent.phone}
             </p>
+            
             <p>
-              <strong>District:</strong> {doctor.district}
+              <strong>Date of Birth:</strong> {agent.dob}
             </p>
-            <p>
-              <strong>Date of Birth:</strong> {doctor.dob}
-            </p>
-            <p>
-              <strong>Degrees:</strong> {doctor.degrees}
-            </p>
-            <p>
-              <strong>Available Time Slots:</strong> {doctor.timeSlots}
-            </p>
+            
           </div>
         </div>
       ))}

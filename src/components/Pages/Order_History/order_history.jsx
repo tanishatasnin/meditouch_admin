@@ -43,6 +43,9 @@ const order_history = ({ orders = [] }) => {
         <div>
             <Sidebar></Sidebar>
             <Header2></Header2>
+            <br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/><br/>
             <OrderCard initialOrders={allOrders}></OrderCard>
         </div>
     );

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./register_doctor.css";
+import "../Nurses/register_nurse.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
 import Header2 from "../../Admin/Header/header2";

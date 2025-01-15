@@ -72,7 +72,7 @@
     border-radius: 5%;
     padding: 3px;
     border: 1px solid #ddd;
-    box-shadow: 0 0 0 3px #d3bcd3,
+    box-shadow: 0 0 0 3px #a89bb1,
       0 0 0 5px #ebe8e8;
     /* border: 5px solid rgb(228, 165, 246); */
   
@@ -106,80 +106,101 @@
     background-color: #6a1b9a;
   }
   
-/* Responsive CSS  */
-   @media (max-width: 1200px) {
-  .e-doctor-card {
-    width: 90%; /* Adjust width for smaller screens */
-    margin-left: 5%; /* Center the card horizontally */
-    height: auto; /* Allow height to adjust based on content */
-    flex-wrap: wrap; /* Allow content to stack on smaller screens */
-    
-  }
-
-  .e-doctor-image {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 10px; /* Add spacing for stacked layout */
-  }
-
-  .e-doctor-details {
-    margin: 0; /* Remove unnecessary margins */
-  }
-}
-
+/* Media query for small screens (max-width: 768px) */
 @media (max-width: 768px) {
+  .e-doctor-page {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
   .page-title {
-    font-size: 20px; /* Reduce title font size */
-    text-align: center; /* Center the title */
+    font-size: 20px; /* Adjust font size for smaller screens */
   }
 
   .e-doctor-card {
-    flex-direction: column; /* Stack image and details */
-    align-items: center; /* Center content */
-    text-align: center; /* Center text */
+    flex-direction: column; /* Stack content vertically */
+    width: 90vw; /* Adjust card width */
+    margin-left: 10px; /* Reduce left margin */
+    height: auto; /* Allow height to adjust based on content */
     padding: 15px; /* Reduce padding */
   }
 
   .e-doctor-image {
-    width: 100px;
-    height: 100px;
-  }
-
-  .e-doctor-name {
-    font-size: 18px; /* Adjust name font size */
-  }
-
-  .e-doctor-specialty {
-    font-size: 14px; /* Adjust specialty font size */
+    width: 120px; /* Reduce image size */
+    height: 120px;
+    margin-right: 0; /* Remove margin for stacked layout */
+    margin-bottom: 10px; /* Add space below the image */
   }
 
   .e-doctor-details {
-    font-size: 13px; /* Adjust details font size */
+    margin: 10px 0; /* Add some margin for better spacing */
+    font-size: 14px; /* Reduce text size slightly */
+  }
+
+  .e-doctor-name {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .e-doctor-specialty {
+    font-size: 14px; /* Reduce font size */
   }
 }
 
+/* Media query for extra small screens (max-width: 480px) */
 @media (max-width: 480px) {
+  .e-doctor-page {
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .page-title {
+    font-size: 18px; /* Adjust font size for extra small screens */
+  }
+
   .e-doctor-card {
     padding: 10px; /* Further reduce padding */
-    box-shadow: none; /* Remove box-shadow for simpler look */
-    border: 1px solid #ddd; /* Simplify borders */
-    margin-top: 50px;
+    margin-left: 5px; /* Reduce margin */
+    width: 95vw; /* Almost full width */
   }
 
-  .doctor-image {
-    width: 80px;
-    height: 80px; /* Reduce image size for very small screens */
+  .e-doctor-image {
+    width: 100px; /* Reduce image size further */
+    height: 100px;
   }
 
-  .doctor-name {
-    font-size: 16px;
+  .e-doctor-details {
+    font-size: 13px; /* Decrease font size */
   }
 
-  .doctor-specialty {
-    font-size: 12px;
+  .e-doctor-name {
+    font-size: 16px; /* Adjust font size */
   }
 
-  .doctor-details {
-    font-size: 12px;
+  .e-doctor-specialty {
+    font-size: 12px; /* Further reduce font size */
+  }
+}
+
+/* Media query for large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .e-doctor-card {
+    width: 1200px; /* Default width for large screens */
+    margin-left: 240px; /* Keep default spacing */
+    height: 350px; /* Default height */
+  }
+
+  .e-doctor-image {
+    width: 160px; /* Default image size */
+    height: 160px;
+  }
+
+  .e-doctor-details {
+    font-size: 15px; /* Default font size */
+  }
+
+  .e-doctor-name {
+    font-size: 20px; /* Default font size */
+  }
+
+  .e-doctor-specialty {
+    font-size: 16px; /* Default font size */
   }
 }
