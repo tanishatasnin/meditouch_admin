@@ -2,10 +2,13 @@
     display: flex;
     background: white;
     margin-bottom: 15px;
-    width: 100%;
+    width: 400px;
     justify-content: flex-start;
     align-items: flex-start;
     height: 80vh;
+    margin-left: -450px;
+    margin-top: 100px;
+
 }
 
 .title {
@@ -25,7 +28,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    width: 40vw;
+    width: 20vw;
     gap: 15px;
 }
 
