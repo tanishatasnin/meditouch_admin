@@ -1,7 +1,13 @@
 .doctor-page {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   /* background-color: #f5f5f5; */
   font-style: poppins;
+  margin-top: 200px;
+  /* background-color: #563099; */
+  gap: 10px;
+  
 
 }
 
@@ -11,6 +17,7 @@
   /* margin-bottom: 20px; */
   font-weight: bold;
   /* font-style: poppins; */
+  margin-top: 200px;
 }
 
 .doctor-card {
@@ -26,6 +33,7 @@
   width: 1200px;
   margin-left: 240px;
   height: 300px;
+  gap: 10px;
   
 }
 

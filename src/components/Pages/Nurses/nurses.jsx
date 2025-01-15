@@ -18,11 +18,21 @@ const nurses = () => {
           degrees: 'A From SDFSDF (2020)',
           charge:'150',
           image: 'https://via.placeholder.com/80'
+        },{
+          
+          name: 'Rokeya Begum',
+          email: 'rcicy42@gamil.com.com',
+          gender: 'feMale',
+          phone: '01998919720',
+          district: 'Dhaka',
+          degrees: 'A From SDFSDF (2020)',
+          charge:'150',
+          image: 'https://via.placeholder.com/80'
         }
        
       ];
     return (
-        <div>
+        <div className='page-body'>
             <Sidebar></Sidebar>
             <Header1></Header1>
             
@@ -59,7 +69,7 @@ const nurses = () => {
       ))}
     </div>
 
-        
+    
             
 
 

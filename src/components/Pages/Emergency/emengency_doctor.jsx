@@ -26,7 +26,7 @@ const emengency_doctor = () => {
       ];
 
     return (
-        <div>
+        <div className='page-body'>
             <Sidebar></Sidebar>
             <Header1></Header1>
             <div className="e-doctor-page">

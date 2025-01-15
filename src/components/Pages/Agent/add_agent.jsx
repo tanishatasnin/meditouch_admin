@@ -1,9 +1,9 @@
 import { useState } from "react";
-
+import "../Nurses/register.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
 import Header2 from "../../Admin/Header/header2";
-// import "G:/SWE/meditouch_admin/src/components/Pages/Nurses/register_nurse.css";
+
 
 
 const EmergencyRegisterDoctor = () => {
@@ -63,7 +63,7 @@ const EmergencyRegisterDoctor = () => {
       <Sidebar />
       {/* <Heade2></Heade2> */}
       <Header2></Header2>
-      <div  className="register-nurse"> 
+      <div  className="register-container"> 
 
       {/* <h1 className="title">Register a Doctor</h1> */}
       

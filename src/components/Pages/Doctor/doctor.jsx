@@ -22,12 +22,25 @@ const doctor = () => {
           degrees: 'MBBS from DMC (2020)',
           timeSlots: 'Not added yet!',
           image: 'https://via.placeholder.com/80', // Placeholder image URL
+        },{
+          id: 12,
+          name: 'MD Rahmatullah',
+          specialty: 'Endocrinologists',
+          licenseId: '117',
+          email: 'mdrahmatullah5468@gmail.com',
+          gender: 'Male',
+          phone: '01715638963',
+          district: 'Barishal',
+          dob: '1999-09-25',
+          degrees: 'MBBS from DMC (2020)',
+          timeSlots: 'Not added yet!',
+          image: 'https://via.placeholder.com/80', // Placeholder image URL
         }
         // Add more doctors here
       ];
     
     return (
-        <div>
+        <div className='page-body'>
             <Sidebar></Sidebar>
             {/* <Header>
             </Header> */}
@@ -69,6 +82,8 @@ const doctor = () => {
         </div>
       ))}
     </div>
+
+    
             
 
 
