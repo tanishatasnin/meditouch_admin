@@ -112,29 +112,102 @@
     margin-left: 230px;
 }
 
-/* section3 */
-/* .home_section3 {
-    
-    display: grid;
-    grid-template-columns: repeat(2, 2fr); 
-    gap: 10px; 
-    max-width: 1200px;
-    margin: 0 auto;
-   
-} */
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .home_cards {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-
-/* Responsive Design */
-@media (max-width: 1024px) {
     .card-container {
-         grid-template-columns: repeat(2, 1fr); 
-        
-        
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+        gap: 15px;
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: 200px;
+        max-width: 250px; /* Ensure cards have a consistent size */
+    }
+}
+
+@media (max-width: 992px) {
+    .home_cards {
+        margin-top: 150px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr; /* 1 card per row */
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto; /* Flexible height */
     }
 }
 
 @media (max-width: 768px) {
+    .home_cards {
+        margin-top: 100px;
+    }
+
     .card-container {
-        grid-template-columns: repeat(1, 1fr); 
+        grid-template-columns: 1fr; /* 1 card per row */
+        gap: 20px;
+        margin-top: 1200px;
+    }
+
+    .card {
+        width: 90%; /* Slight padding for smaller screens */
+        max-width: 350px; /* Ensure consistent size */
+        margin: 0 auto;
+        height: 250px;
+        padding: 15px;
+    }
+
+    .icon {
+        font-size: 25px; /* Adjust icon size */
+        margin: 15px 0;
+    }
+
+    .title1 {
+        font-size: 14px; /* Maintain readability */
+        margin-bottom: 10px;
+    }
+
+    .value {
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 12px;
     }
 }
+
+
+
+
+ @media (max-width: 576px) {
+    .chart-container {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+        
+    }
+
+    .card {
+        padding: 10px;
+        height: 250px;
+        width: 350px;
+    }
+
+    .icon {
+        font-size: 25px; 
+    }
+} 

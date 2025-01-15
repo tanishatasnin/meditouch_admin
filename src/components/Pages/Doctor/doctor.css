@@ -77,3 +77,84 @@
   color: #898888;
   text-decoration: solid;
 }
+
+/* Responsive CSS */
+@media (max-width: 1200px) {
+  .doctor-card {
+    width: 90%; /* Adjust width for smaller screens */
+    margin-left: 5%; /* Center the card horizontally */
+    height: auto; /* Allow height to adjust based on content */
+    flex-wrap: wrap; /* Allow content to stack on smaller screens */
+    
+  }
+
+  .doctor-image {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px; /* Add spacing for stacked layout */
+  }
+
+  .doctor-details {
+    margin: 0; /* Remove unnecessary margins */
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 20px; /* Reduce title font size */
+    text-align: center; /* Center the title */
+  }
+
+  .doctor-card {
+    flex-direction: column; /* Stack image and details */
+    align-items: center; /* Center content */
+    text-align: center; /* Center text */
+    padding: 15px; /* Reduce padding */
+    margin-top: 45px;
+    width: 90%;
+  }
+
+  .doctor-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .doctor-name {
+    font-size: 18px; /* Adjust name font size */
+  }
+
+  .doctor-specialty {
+    font-size: 14px; /* Adjust specialty font size */
+  }
+
+  .doctor-details {
+    font-size: 13px; /* Adjust details font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-card {
+    padding: 10px; /* Further reduce padding */
+    box-shadow: none; /* Remove box-shadow for simpler look */
+    border: 1px solid #ddd; /* Simplify borders */
+    margin-top: 70px;
+    width: 250px;
+  }
+
+  .doctor-image {
+    width: 80px;
+    height: 80px; /* Reduce image size for very small screens */
+  }
+
+  .doctor-name {
+    font-size: 16px;
+  }
+
+  .doctor-specialty {
+    font-size: 12px;
+  }
+
+  .doctor-details {
+    font-size: 12px;
+  }
+}
