@@ -1,87 +1,78 @@
+/* Header styling */
 .header {
-    position: fixed; /* Makes the header fixed to the top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    /* Adjust width to account for the sidebar */
-    height: 1000px; /* Fixed height for the header */
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensures the header stays on top of other elements */
-  }
-  
-  .search-bar-1 {
-    display: flex;
-    align-items: center;
-    width: 20%;
-  }
-  
-  .search-bar-1 input {
-    border: 1px #f2e1f8 ;
-    padding: 15px 15px;
-    border-radius: 10px;
-    margin-right: 10px;
-    width: 440px;
-    background-color:#f2e1f8;
-    height: 45px ;
-    
-  }
-  .search-bar-1:hover{
-    opacity: 0.7;
-    border: 1px #f2e1f8 ;
-    
+  position: fixed; /* Fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 270px;
+  height: 80px; /* Adjust header height */
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Keeps header above other elements */
 }
-  
-  .search-bar-1 button {
-    background: rgb(76, 48, 118);
-    color: white;
-    /* border: 3px ; */
-    padding: 8px 12px;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
 
+/* Aligning search box in the middle */
+.search-bar-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the search box */
+  flex-grow: 1; /* Makes it take available space */
+  max-width: 600px; /* Optional: Max width for the search bar */
+}
+
+.search-bar-1 input {
+  border: 1px solid #f2e1f8;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: 100%; /* Use available space */
+  max-width: 440px;
+  background-color: #f2e1f8;
+  height: 45px;
+}
+
+.search-bar-1 button {
+  background: rgb(76, 48, 118);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.profile img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .header {
+      padding: 0 10px;
   }
-  
+
+  .search-bar-1 {
+      display: none; /* Hide search bar on smaller screens */
+  }
+
   .profile {
-    display: flex;
-    align-items: center;
-    width: 30%;
-    justify-content: flex-end;
+      flex-grow: 1;
+      justify-content: center; /* Center profile on small screens */
   }
-  
-  .profile img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    padding: 15px;
-  }
-
-  /* ???????????????? header close ????????????????/ */
-  
-  /* /////////////////////////////////////  header 1 start ///////////////////////////// */
-
-
-
-
-  /* /////////////////////////////////////  header 1 close  ///////////////////////////// */
-  
-
-  
-  @media only screen and (max-width: 768px) {
-    .header {
-        padding-left: 15px;
-        
-    }
-    .search-bar-1{
-      display: none;
-
-    }
-    .profile{
-      width: 50%;
-    }
-  }  
+}

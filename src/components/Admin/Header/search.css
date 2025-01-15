@@ -130,3 +130,33 @@
   }
 
 }
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 20%;
+    margin-right: 20%;
+    .search {
+      width: 40px;
+      height: 40px;
+      &::before {
+        top: 19px;
+        left: 15px;
+        width: 10px;
+      }
+      &::after {
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 15px;
+      }
+    }
+    input {
+      width: 50px;
+      height: 30px;
+      padding: 0 40px 0 10px;
+      &:focus {
+        width: 100px;
+      }
+    }
+  }
+}

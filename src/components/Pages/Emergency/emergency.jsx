@@ -29,7 +29,7 @@ const emergency = () => {
   };
 
   return (
-    <div>
+    <div >
       <Sidebar />
       <Header1 />
       <div className="e-doctor-page">

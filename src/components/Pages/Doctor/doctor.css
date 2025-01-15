@@ -1,7 +1,13 @@
 .doctor-page {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   /* background-color: #f5f5f5; */
   font-style: poppins;
+  margin-top: 200px;
+  /* background-color: #563099; */
+  gap: 10px;
+  
 
 }
 
@@ -11,6 +17,7 @@
   /* margin-bottom: 20px; */
   font-weight: bold;
   /* font-style: poppins; */
+  margin-top: 200px;
 }
 
 .doctor-card {
@@ -22,11 +29,12 @@
   border-radius: 7px;
   border-color: white;
   padding: 20px;
-  margin-bottom: 20px;
   box-shadow: 0 5px 15px rgba(8, 8, 8, 0.1);
   width: 1200px;
   margin-left: 240px;
-  height: 350px;
+  height: 300px;
+  gap: 10px;
+  
 }
 
 .doctor-image {
@@ -76,4 +84,104 @@
 .doctor-details p strong {
   color: #898888;
   text-decoration: solid;
+}
+
+/* Responsive CSS */
+/* Media query for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .doctor-page {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .page-title {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .doctor-card {
+    flex-direction: column; /* Stack content vertically */
+    width: 90vw; /* Adjust card width */
+    margin-left: 10px; /* Reduce left margin */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .doctor-image {
+    width: 120px; /* Reduce image size */
+    height: 120px;
+    margin-right: 0; /* Remove margin for stacked layout */
+    margin-bottom: 10px; /* Add space below the image */
+  }
+
+  .doctor-details {
+    margin: 10px 0; /* Add some margin for better spacing */
+    font-size: 14px; /* Reduce text size slightly */
+  }
+
+  .doctor-name {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .doctor-specialty {
+    font-size: 14px; /* Reduce font size */
+  }
+}
+
+/* Media query for extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .doctor-page {
+    padding: 5px; /* Further reduce padding */
+  }
+
+  .page-title {
+    font-size: 18px; /* Adjust font size for extra small screens */
+  }
+
+  .doctor-card {
+    padding: 10px; /* Further reduce padding */
+    margin-left: 5px; /* Reduce margin */
+    width: 95vw; /* Almost full width */
+  }
+
+  .doctor-image {
+    width: 100px; /* Reduce image size further */
+    height: 100px;
+  }
+
+  .doctor-details {
+    font-size: 13px; /* Decrease font size */
+  }
+
+  .doctor-name {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .doctor-specialty {
+    font-size: 12px; /* Further reduce font size */
+  }
+}
+
+/* Media query for large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .doctor-card {
+    width: 1200px; /* Default width for large screens */
+    margin-left: 240px; /* Keep default spacing */
+    height: 350px; /* Default height */
+  }
+
+  .doctor-image {
+    width: 160px; /* Default image size */
+    height: 160px;
+  }
+
+  .doctor-details {
+    font-size: 15px; /* Default font size */
+  }
+
+  .doctor-name {
+    font-size: 20px; /* Default font size */
+  }
+
+  .doctor-specialty {
+    font-size: 16px; /* Default font size */
+  }
 }

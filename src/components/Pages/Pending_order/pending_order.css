@@ -21,6 +21,7 @@
     width: 80vw;
     /* Spans full width of the container */
     margin-left: 245px;
+    
 
 }
 
@@ -29,6 +30,7 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 13%;
+    margin-top: 20px;
 }
 
 /* Adjusting card styling for full width */
@@ -52,6 +54,7 @@
     /* margin-bottom: 250px;  */
     /* Adds spacing between cards */
     /* margin-top: 0; */
+    
 
 }
 
@@ -123,4 +126,89 @@
 .item-separator {
     display: flex;
     justify-content: space-between;
+}
+
+/* Media query for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-container {
+        margin-top: 100px; /* Adjust spacing for smaller screens */
+        height: auto;
+    }
+
+    .pending-orders-container {
+        margin-left: 10px; /* Reduce left margin for smaller screens */
+        width: 90vw; /* Adjust width */
+        padding: 20px; /* Add consistent padding */
+    }
+
+    .order-cards {
+        flex-direction: column;
+        gap: 10px; /* Reduce gap between cards */
+        margin-top: 20px; /* Adjust margin */
+    }
+
+    .order-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+        border-radius: 8px; /* Adjust border radius */
+    }
+
+    .mark-delivered-button {
+        padding: 8px 12px; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+
+/* Media query for extra small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .main-container {
+        margin-top: 80px; /* Adjust spacing */
+    }
+
+    .pending-orders-container {
+        margin-left: 5px; /* Further reduce margin */
+        width: 95vw; /* Almost full width */
+    }
+
+    .order-cards {
+        gap: 5px; /* Minimize gap */
+        margin-top: 10px; /* Reduce margin */
+    }
+
+    .order-card {
+        padding: 10px; /* Further reduce padding */
+        font-size: 0.85rem; /* Decrease font size */
+    }
+
+    .mark-delivered-button {
+        font-size: 0.8rem; /* Reduce button font size */
+        padding: 6px 10px; /* Adjust button size */
+    }
+
+    .card-header p,
+    .card-details p,
+    .total-amount,
+    .order-status {
+        font-size: 0.8rem; /* Adjust text size for better fit */
+    }
+}
+
+/* Media query for large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+    .main-container {
+        margin-top: 250px; /* Default spacing for large screens */
+    }
+
+    .pending-orders-container {
+        margin-left: 245px; /* Keep consistent large screen spacing */
+        width: 80vw; /* Default width */
+    }
+
+    .order-cards {
+        gap: 20px; /* Larger gaps between cards */
+    }
+
+    .order-card {
+        padding: 20px; /* Default padding */
+        font-size: 1rem; /* Normal font size */
+    }
 }

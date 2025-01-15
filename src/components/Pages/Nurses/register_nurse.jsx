@@ -1,8 +1,8 @@
 import { useState } from "react";
-// import "./register_nurse.css";
+import "./register.css";
 import Sidebar from "../../Admin/Navbar/sidebar";
 import Header from "../../Admin/Header/header";
-import "../Doctor/register_doctor.css"
+
 import Header2 from "../../Admin/Header/header2";
 const RegisterNurse = () => {
   const [formData, setFormData] = useState({
@@ -62,7 +62,7 @@ const RegisterNurse = () => {
     <div className="page-body">
       <Sidebar />
       <Header2></Header2>
-      <div className="register-nurse">
+      <div className="register-container">
         <form onSubmit={handleSubmit} className="form">
           <p className="subtitle">Insert Nurse details below:</p>
           <input
